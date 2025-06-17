@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+}
+
+.card {
+    background: linear-gradient(135deg, #00feba, #5b548e);
+    width: 90vw;
+    max-width: 500px;
+    margin: 100px auto;
+    height: auto;
+    padding: 20px;
+
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.uppar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.uppar input {
+    padding: 15px;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.uppar input::placeholder {
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+button {
+    padding: 5px;
+    height: 48px;
+    width: 48px;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button img {
+    width: 20px;
+}
+
+.icon {
+    width: 120px;
+}
+
+.temp {
+    font-size: 60px;
+    color: azure;
+    font-family: 'Arial';
+}
+
+.city {
+    color: azure;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.orneeche {
+    width: 100%;
+    display: grid;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex: 1 1 45%;
+    justify-content: center;
+}
+
+.humidity, .wind {
+    width: 40px;
+}
+
+.hum, .win {
+    font-size: 22px;
+    color: white;
+}
+
+.text, .text1 {
+    font-size: 16px;
+    color: aliceblue;
+}
+
+
+@media (max-width: 768px) {
+    .temp {
+        font-size: 50px;
+    }
+
+    .city {
+        font-size: 30px;
+    }
+
+    .hum, .win {
+        font-size: 20px;
+    }
+
+    .text, .text1 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        width: 100px;
+    }
+
+    .temp {
+        font-size: 40px;
+    }
+
+    .city {
+        font-size: 25px;
+    }
+
+    .uppar input {
+        width: 90%;
+    }
+
+    button {
+        height: 40px;
+        width: 40px;
+    }
+
+    button img {
+        width: 16px;
+    }
+
+    .hum, .win {
+        font-size: 18px;
+    }
+
+    .text, .text1 {
+        font-size: 12px;
+    }
+
+    .col {
+        flex-direction: column;
+    }
+}
