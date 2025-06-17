@@ -16,15 +16,15 @@ async function checkweather(city) {
     document.querySelector(".win").innerHTML = data.wind.speed + "km/h"
 
     if (data.weather[0].main === "Clouds") {
-    icon.src = "images/clouds.png"
+    icon.src = "clouds.png"
 } else if (data.weather[0].main === "Clear") {
-    icon.src = "images/clear.png"
+    icon.src = "clear.png"
 } else if (data.weather[0].main === "Rain") {
-    icon.src = "images/rain.png"
+    icon.src = "rain.png"
 } else if (data.weather[0].main === "Mist") {
-    icon.src = "images/mist.png"
+    icon.src = "mist.png"
 } else if (data.weather[0].main === "Drizzle") {
-    icon.src = "images/drizzle.png"
+    icon.src = "drizzle.png"
 }
 
 
